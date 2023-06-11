@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(227, 242, 193);
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("AVCosmos-Regular.otf") format("opentype");
+}
+
+.custom-image {
+    position: static;
+    float: none;
+    margin-right: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(246, 255, 222);
+    position: static;
+}
+
+.topnav #myLinks {
+    display: none;
+    font-family: CustomFont;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(255, 188, 19);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.topnav a.icon {
+    float: right;
+    /* Removed "size" property as it is not a valid CSS property */
+    color: rgb(255, 188, 19);
+}
+
+.topnav a:hover {
+    background-color: rgb(170, 200, 167);
+    color: rgb(90, 120, 52);
+}
+
+.active {
+    background-color: rgb(90, 120, 52);
+    font-family: CustomFont;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 80px;
+    color: rgb(90, 120, 52);
+    border-right: 4px solid rgb(90, 120, 52);
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: right;
+    white-space: pre-line;
+    line-height: 20px;
+}
+
+.quote .sub-quote {
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(90, 120, 52);
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.quote-container {
+    flex: 1;
+    text-align: right;
+}
+
+.fixed-image {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.timer,
+.stopwatch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer h2,
+.stopwatch h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: CustomFont;
+    color: darkolivegreen;
+}
+
+.timer input[type="number"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.timer button,
+.stopwatch button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: rgb(172, 190, 131);
+    color: rgb(90, 120, 52);
+    border: none;
+    border-radius: 5px;
+}
+
+.timer button:hover,
+.stopwatch button:hover {
+    background-color: rgb(90, 120, 52);
+    color: rgb(227, 242, 193);
+}
+
+.timer #timerDisplay,
+.stopwatch #display {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(90, 120, 52);
+}
+
+
+  
